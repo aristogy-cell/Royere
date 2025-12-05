@@ -39,28 +39,18 @@
       position: relative;
     }
 
-    /* 타이틀 */
+    /* 타이틀 – 이제 이미지 한 장 */
     .title {
       text-align: center;
       margin-bottom: 240px;
       text-shadow: 0 0 10px rgba(0,0,0,0.8);
     }
 
-    .title-main {
-      font-family: "Haettenschweiler", "Impact", "Arial Black", sans-serif;
-      font-size: 47px;
-      color: #ffffff;
-      font-weight: 350;
-      letter-spacing: 1px;
-      margin-right: 4px;
-    }
-
-    .title-sub {
-      font-family: "Haettenschweiler", "Impact", "Arial Black", sans-serif;
-      font-size: 45px;
-      color: #AEAEAE; /* 회색 */
-      font-weight: 400;
-      letter-spacing: 1px;
+    .title img {
+      max-width: 100%;
+      height: auto;
+      /* 필요하면 살짝 줄이고 싶을 때 */
+      /* width: 95%; */
     }
 
     /* 내용 박스 */
@@ -98,9 +88,6 @@
 
     /* 작은 화면 대응 */
     @media (max-width: 400px) {
-      .title-main, .title-sub {
-        font-size: 40px;
-      }
       .panel {
         padding: 18px 16px;
       }
@@ -117,9 +104,9 @@
 <body>
   <div class="phone">
 
+    <!-- 텍스트 대신 이미지 로고 -->
     <header class="title">
-      <span class="title-main">Royere</span>
-      <span class="title-sub">Asia Consultant</span>
+      <img src="logo-title.png.png" alt="Royere Asia Consultant">
     </header>
 
     <section class="panel">
