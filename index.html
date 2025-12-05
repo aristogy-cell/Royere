@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Royere Asia Consultant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: #000;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 세로 화면 프레임 */
+    .phone {
+      width: 430px;
+      max-width: 100vw;
+      height: 860px;
+      max-height: 100vh;
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      padding: 40px 20px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    /* 타이틀 */
+    .title {
+      text-align: center;
+      margin-bottom: 240px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    .title-main {
+      font-family: "Haettenschweiler", "Impact", "Arial Black", sans-serif;
+      font-size: 47px;
+      color: #ffffff;
+      font-weight: 350;
+      letter-spacing: 1px;
+      margin-right: 4px;
+    }
+
+    .title-sub {
+      font-family: "Haettenschweiler", "Impact", "Arial Black", sans-serif;
+      font-size: 45px;
+      color: #AEAEAE; /* 회색 */
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    /* 내용 박스 */
+    .panel {
+      margin-top: 90px;  /* 아래로 더 내림 */
+      background: rgba(255,255,255,0.60);  /* 더 투명하게 */
+      padding: 22px 22px 20px;
+      border-radius: 8px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .panel p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .panel-contact {
+      text-align: right;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .panel-contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .panel-contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* 작은 화면 대응 */
+    @media (max-width: 400px) {
+      .title-main, .title-sub {
+        font-size: 40px;
+      }
+      .panel {
+        padding: 18px 16px;
+      }
+      .panel p {
+        font-size: 13px;
+      }
+      .panel-contact {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="phone">
+
+    <header class="title">
+      <span class="title-main">Royere</span>
+      <span class="title-sub">Asia Consultant</span>
+    </header>
+
+    <section class="panel">
+      <p>
+        <strong>Welcome to Royere Asia Consultant.</strong><br>
+        We provide the best solutions to maximize your asset value, including real
+        estate brokerage, consulting, construction, design, interior work, and
+        building exterior projects. Contact us at the number below for reservations,
+        on-site visits, consultations, and estimates — all free of charge.
+      </p>
+
+      <div class="panel-contact">
+        <a href="mailto:aristogy@gmail.com">aristogy@gmail.com</a><br>
+        115, Wangsimni-ro, Seongdong-gu,<br>
+        Seoul, 04768, South Korea<br>
+        T. 02-465-8732&nbsp; F. 050-4176-4885<br>
+        <a href="https://www.royere.co.kr" target="_blank">www.royere.co.kr</a>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
